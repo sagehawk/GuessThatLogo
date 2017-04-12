@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADEA01F71E9E8D0800970C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA01F61E9E8D0800970C4D /* AppDelegate.swift */; };
+		ADEA01F91E9E8D0800970C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA01F81E9E8D0800970C4D /* ViewController.swift */; };
+		ADEA01FC1E9E8D0800970C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA01FA1E9E8D0800970C4D /* Main.storyboard */; };
+		ADEA01FE1E9E8D0800970C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEA01FD1E9E8D0800970C4D /* Assets.xcassets */; };
+		ADEA02011E9E8D0800970C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA01FF1E9E8D0800970C4D /* LaunchScreen.storyboard */; };
+		ADEA020C1E9E8D0800970C4D /* Guess_That_LogoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA020B1E9E8D0800970C4D /* Guess_That_LogoTests.swift */; };
+		ADEA02171E9E8D0800970C4D /* Guess_That_LogoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA02161E9E8D0800970C4D /* Guess_That_LogoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADEA02081E9E8D0800970C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADEA01EB1E9E8D0700970C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADEA01F21E9E8D0800970C4D;
+			remoteInfo = "Guess That Logo";
+		};
+		ADEA02131E9E8D0800970C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADEA01EB1E9E8D0700970C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADEA01F21E9E8D0800970C4D;
+			remoteInfo = "Guess That Logo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADEA01F31E9E8D0800970C4D /* Guess That Logo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess That Logo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA01F61E9E8D0800970C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADEA01F81E9E8D0800970C4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADEA01FB1E9E8D0800970C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADEA01FD1E9E8D0800970C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADEA02001E9E8D0800970C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADEA02021E9E8D0800970C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADEA02071E9E8D0800970C4D /* Guess That LogoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess That LogoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA020B1E9E8D0800970C4D /* Guess_That_LogoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_That_LogoTests.swift; sourceTree = "<group>"; };
+		ADEA020D1E9E8D0800970C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADEA02121E9E8D0800970C4D /* Guess That LogoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess That LogoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA02161E9E8D0800970C4D /* Guess_That_LogoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_That_LogoUITests.swift; sourceTree = "<group>"; };
+		ADEA02181E9E8D0800970C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADEA01F01E9E8D0800970C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA02041E9E8D0800970C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA020F1E9E8D0800970C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADEA01EA1E9E8D0700970C4D = {
+			isa = PBXGroup;
+			children = (
+				ADEA01F51E9E8D0800970C4D /* Guess That Logo */,
+				ADEA020A1E9E8D0800970C4D /* Guess That LogoTests */,
+				ADEA02151E9E8D0800970C4D /* Guess That LogoUITests */,
+				ADEA01F41E9E8D0800970C4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADEA01F41E9E8D0800970C4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA01F31E9E8D0800970C4D /* Guess That Logo.app */,
+				ADEA02071E9E8D0800970C4D /* Guess That LogoTests.xctest */,
+				ADEA02121E9E8D0800970C4D /* Guess That LogoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADEA01F51E9E8D0800970C4D /* Guess That Logo */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA01F61E9E8D0800970C4D /* AppDelegate.swift */,
+				ADEA01F81E9E8D0800970C4D /* ViewController.swift */,
+				ADEA01FA1E9E8D0800970C4D /* Main.storyboard */,
+				ADEA01FD1E9E8D0800970C4D /* Assets.xcassets */,
+				ADEA01FF1E9E8D0800970C4D /* LaunchScreen.storyboard */,
+				ADEA02021E9E8D0800970C4D /* Info.plist */,
+			);
+			path = "Guess That Logo";
+			sourceTree = "<group>";
+		};
+		ADEA020A1E9E8D0800970C4D /* Guess That LogoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA020B1E9E8D0800970C4D /* Guess_That_LogoTests.swift */,
+				ADEA020D1E9E8D0800970C4D /* Info.plist */,
+			);
+			path = "Guess That LogoTests";
+			sourceTree = "<group>";
+		};
+		ADEA02151E9E8D0800970C4D /* Guess That LogoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA02161E9E8D0800970C4D /* Guess_That_LogoUITests.swift */,
+				ADEA02181E9E8D0800970C4D /* Info.plist */,
+			);
+			path = "Guess That LogoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADEA01F21E9E8D0800970C4D /* Guess That Logo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA021B1E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That Logo" */;
+			buildPhases = (
+				ADEA01EF1E9E8D0800970C4D /* Sources */,
+				ADEA01F01E9E8D0800970C4D /* Frameworks */,
+				ADEA01F11E9E8D0800970C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guess That Logo";
+			productName = "Guess That Logo";
+			productReference = ADEA01F31E9E8D0800970C4D /* Guess That Logo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADEA02061E9E8D0800970C4D /* Guess That LogoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA021E1E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That LogoTests" */;
+			buildPhases = (
+				ADEA02031E9E8D0800970C4D /* Sources */,
+				ADEA02041E9E8D0800970C4D /* Frameworks */,
+				ADEA02051E9E8D0800970C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADEA02091E9E8D0800970C4D /* PBXTargetDependency */,
+			);
+			name = "Guess That LogoTests";
+			productName = "Guess That LogoTests";
+			productReference = ADEA02071E9E8D0800970C4D /* Guess That LogoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADEA02111E9E8D0800970C4D /* Guess That LogoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA02211E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That LogoUITests" */;
+			buildPhases = (
+				ADEA020E1E9E8D0800970C4D /* Sources */,
+				ADEA020F1E9E8D0800970C4D /* Frameworks */,
+				ADEA02101E9E8D0800970C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADEA02141E9E8D0800970C4D /* PBXTargetDependency */,
+			);
+			name = "Guess That LogoUITests";
+			productName = "Guess That LogoUITests";
+			productReference = ADEA02121E9E8D0800970C4D /* Guess That LogoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADEA01EB1E9E8D0700970C4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sage Hawk";
+				TargetAttributes = {
+					ADEA01F21E9E8D0800970C4D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C4ZZEB2ZTS;
+						ProvisioningStyle = Automatic;
+					};
+					ADEA02061E9E8D0800970C4D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C4ZZEB2ZTS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADEA01F21E9E8D0800970C4D;
+					};
+					ADEA02111E9E8D0800970C4D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C4ZZEB2ZTS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADEA01F21E9E8D0800970C4D;
+					};
+				};
+			};
+			buildConfigurationList = ADEA01EE1E9E8D0700970C4D /* Build configuration list for PBXProject "Guess That Logo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADEA01EA1E9E8D0700970C4D;
+			productRefGroup = ADEA01F41E9E8D0800970C4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADEA01F21E9E8D0800970C4D /* Guess That Logo */,
+				ADEA02061E9E8D0800970C4D /* Guess That LogoTests */,
+				ADEA02111E9E8D0800970C4D /* Guess That LogoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADEA01F11E9E8D0800970C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA02011E9E8D0800970C4D /* LaunchScreen.storyboard in Resources */,
+				ADEA01FE1E9E8D0800970C4D /* Assets.xcassets in Resources */,
+				ADEA01FC1E9E8D0800970C4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA02051E9E8D0800970C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA02101E9E8D0800970C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADEA01EF1E9E8D0800970C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA01F91E9E8D0800970C4D /* ViewController.swift in Sources */,
+				ADEA01F71E9E8D0800970C4D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA02031E9E8D0800970C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA020C1E9E8D0800970C4D /* Guess_That_LogoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA020E1E9E8D0800970C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA02171E9E8D0800970C4D /* Guess_That_LogoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADEA02091E9E8D0800970C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADEA01F21E9E8D0800970C4D /* Guess That Logo */;
+			targetProxy = ADEA02081E9E8D0800970C4D /* PBXContainerItemProxy */;
+		};
+		ADEA02141E9E8D0800970C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADEA01F21E9E8D0800970C4D /* Guess That Logo */;
+			targetProxy = ADEA02131E9E8D0800970C4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADEA01FA1E9E8D0800970C4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADEA01FB1E9E8D0800970C4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADEA01FF1E9E8D0800970C4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADEA02001E9E8D0800970C4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADEA02191E9E8D0800970C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADEA021A1E9E8D0800970C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADEA021C1E9E8D0800970C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C4ZZEB2ZTS;
+				INFOPLIST_FILE = "Guess That Logo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Before-the-Beginning.Guess-That-Logo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ADEA021D1E9E8D0800970C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C4ZZEB2ZTS;
+				INFOPLIST_FILE = "Guess That Logo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Before-the-Beginning.Guess-That-Logo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ADEA021F1E9E8D0800970C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C4ZZEB2ZTS;
+				INFOPLIST_FILE = "Guess That LogoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Before-the-Beginning.Guess-That-LogoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess That Logo.app/Guess That Logo";
+			};
+			name = Debug;
+		};
+		ADEA02201E9E8D0800970C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C4ZZEB2ZTS;
+				INFOPLIST_FILE = "Guess That LogoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Before-the-Beginning.Guess-That-LogoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess That Logo.app/Guess That Logo";
+			};
+			name = Release;
+		};
+		ADEA02221E9E8D0800970C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C4ZZEB2ZTS;
+				INFOPLIST_FILE = "Guess That LogoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Before-the-Beginning.Guess-That-LogoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Guess That Logo";
+			};
+			name = Debug;
+		};
+		ADEA02231E9E8D0800970C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C4ZZEB2ZTS;
+				INFOPLIST_FILE = "Guess That LogoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Before-the-Beginning.Guess-That-LogoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Guess That Logo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADEA01EE1E9E8D0700970C4D /* Build configuration list for PBXProject "Guess That Logo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA02191E9E8D0800970C4D /* Debug */,
+				ADEA021A1E9E8D0800970C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEA021B1E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That Logo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA021C1E9E8D0800970C4D /* Debug */,
+				ADEA021D1E9E8D0800970C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADEA021E1E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That LogoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA021F1E9E8D0800970C4D /* Debug */,
+				ADEA02201E9E8D0800970C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADEA02211E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That LogoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA02221E9E8D0800970C4D /* Debug */,
+				ADEA02231E9E8D0800970C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADEA01EB1E9E8D0700970C4D /* Project object */;
+}
