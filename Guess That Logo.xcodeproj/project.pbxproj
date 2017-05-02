@@ -514,6 +514,7 @@
 				ADEA021D1E9E8D0800970C4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEA021E1E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That LogoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				ADEA02201E9E8D0800970C4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEA02211E9E8D0800970C4D /* Build configuration list for PBXNativeTarget "Guess That LogoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				ADEA02231E9E8D0800970C4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
