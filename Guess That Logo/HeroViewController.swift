@@ -1,15 +1,15 @@
 //
-//  CarViewController.swift
+//  HeroViewController.swift
 //  Guess That Logo
 //
-//  Created by Sage Hawk on 5/10/17.
+//  Created by Sage Hawk on 5/21/17.
 //  Copyright © 2017 Sage Hawk. All rights reserved.
 //
 
 import UIKit
 
-class CarViewController: UIViewController {
-    
+class HeroViewController: UIViewController {
+
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var bar1: UIImageView!
@@ -33,15 +33,17 @@ class CarViewController: UIViewController {
         super.viewDidLoad()
         
         Questions = [
-        Question(Question: "Lexus", Answers: ["Bmw", "Lexus", "Ford", "Dodge"], Answer: 1),
-        Question(Question: "Ferrari", Answers: ["Porsche", "Oldsmobile", "Lamborghini", "Ferrari"], Answer: 3),
-        Question(Question: "RR", Answers: ["Bugatti", "McLaren", "Rolls-Royce", "Koenigsegg"], Answer: 2),
-        Question(Question: "BMW", Answers: ["Nissan", "Infiniti", "Bmw", "Mazda"], Answer: 2),
-        Question(Question: "Alfa Romeo", Answers: ["Alfa Romeo", "Tesla", "Maserati", "Pagani"], Answer: 0),]
+            Question(Question: "Spiderman", Answers: ["Aquaman", "Static", "Spiderman", "Falcon"], Answer: 2),
+            Question(Question: "Batman", Answers: ["Ironman", "Robin", "Hulk", "Batman"], Answer: 3),
+            Question(Question: "Flash", Answers: ["Flash", "GreenLantern", "Ant-Man", "Thor"], Answer: 0),
+            Question(Question: "WonderWoman", Answers: ["Daredevil", "Wolverine", "Black Widow", "WonderWoman"], Answer: 3),
+            Question(Question: "Superman", Answers: ["Silver Surfer", "Superman", "Plasticman", "Beastboy"], Answer: 1),]
 
+        
+        
         PickQuestion()
     }
-
+    
     
     func PickQuestion(){
         if Questions.count > 0{
@@ -67,6 +69,7 @@ class CarViewController: UIViewController {
     }
     
     @IBAction func btn1(_ sender: Any) {
+        lightUpButtons()
         if answerNumber == 0{
             questionNumber += 1
             bar1.image = UIImage(named:"greenBar")
@@ -81,6 +84,7 @@ class CarViewController: UIViewController {
         }
     }
     @IBAction func btn2(_ sender: Any) {
+        lightUpButtons()
         if answerNumber == 1{
             questionNumber += 1
             bar2.image = UIImage(named:"greenBar")
@@ -95,6 +99,7 @@ class CarViewController: UIViewController {
         }
     }
     @IBAction func btn3(_ sender: Any) {
+        lightUpButtons()
         if answerNumber == 2{
             questionNumber += 1
             bar3.image = UIImage(named:"greenBar")
@@ -109,6 +114,7 @@ class CarViewController: UIViewController {
         }
     }
     @IBAction func btn4(_ sender: Any) {
+        lightUpButtons()
         if answerNumber == 3{
             questionNumber += 1
             bar4.image = UIImage(named:"greenBar")
@@ -130,21 +136,37 @@ class CarViewController: UIViewController {
     }
     
     func setLogo() {
-        if QLabel == "Lexus"{
-            logoImageView.image = UIImage(named:"lexus.png")
+        if QLabel == "Spiderman"{
+            logoImageView.image = UIImage(named:"spiderman.png")
         }
-        if QLabel == "Ferrari"{
-            logoImageView.image = UIImage(named:"ferrari.png")
+        if QLabel == "Batman"{
+            logoImageView.image = UIImage(named:"batman.png")
         }
-        if QLabel == "RR"{
-            logoImageView.image = UIImage(named:"rollsroyce.png")
+        if QLabel == "Flash"{
+            logoImageView.image = UIImage(named:"flash.png")
         }
-        if QLabel == "BMW"{
-            logoImageView.image = UIImage(named:"bmw.png")
+        if QLabel == "WonderWoman"{
+            logoImageView.image = UIImage(named:"wonderwoman.png")
         }
-        if QLabel == "Alfa Romeo"{
-            logoImageView.image = UIImage(named:"alfaromeo.png")
+        if QLabel == "Superman"{
+            logoImageView.image = UIImage(named:"superman.png")
         }
     }
     
-}
+    func lightUpButtons() {
+        let delayInSeconds = 0.2
+        bar1.image = UIImage(named:"greenBar")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            self.bar1.image = UIImage(named:"greyBar")
+        self.bar2.image = UIImage(named:"greenBar")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            self.bar2.image = UIImage(named:"greyBar")
+            self.bar3.image = UIImage(named:"greenBar")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            self.bar3.image = UIImage(named:"greyBar")
+            self.bar4.image = UIImage(named:"greenBar")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            self.bar4.image = UIImage(named:"greyBar")
+            }}}}}
+
+    }

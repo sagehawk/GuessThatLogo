@@ -1,15 +1,15 @@
 //
-//  CarViewController.swift
+//  FlagViewController.swift
 //  Guess That Logo
 //
-//  Created by Sage Hawk on 5/10/17.
+//  Created by Sage Hawk on 5/21/17.
 //  Copyright © 2017 Sage Hawk. All rights reserved.
 //
 
 import UIKit
 
-class CarViewController: UIViewController {
-    
+class FlagViewController: UIViewController {
+
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var bar1: UIImageView!
@@ -33,15 +33,16 @@ class CarViewController: UIViewController {
         super.viewDidLoad()
         
         Questions = [
-        Question(Question: "Lexus", Answers: ["Bmw", "Lexus", "Ford", "Dodge"], Answer: 1),
-        Question(Question: "Ferrari", Answers: ["Porsche", "Oldsmobile", "Lamborghini", "Ferrari"], Answer: 3),
-        Question(Question: "RR", Answers: ["Bugatti", "McLaren", "Rolls-Royce", "Koenigsegg"], Answer: 2),
-        Question(Question: "BMW", Answers: ["Nissan", "Infiniti", "Bmw", "Mazda"], Answer: 2),
-        Question(Question: "Alfa Romeo", Answers: ["Alfa Romeo", "Tesla", "Maserati", "Pagani"], Answer: 0),]
+            Question(Question: "America", Answers: ["Australia", "England", "Germany", "America"], Answer: 3),
+            Question(Question: "Jamaica", Answers: ["Japan", "Afghanistan", "Jamaica", "Poland"], Answer: 2),
+            Question(Question: "Germany", Answers: ["Britain", "Germany", "Denmark", "France"], Answer: 1),
+            Question(Question: "Nepal", Answers: ["China", "Iceland", "Nepal", "Greenland"], Answer: 2),
+            Question(Question: "Africa", Answers: ["Africa", "Mexico", "Nigeria", "Turkey"], Answer: 0),]
+
 
         PickQuestion()
     }
-
+    
     
     func PickQuestion(){
         if Questions.count > 0{
@@ -130,21 +131,21 @@ class CarViewController: UIViewController {
     }
     
     func setLogo() {
-        if QLabel == "Lexus"{
-            logoImageView.image = UIImage(named:"lexus.png")
+        if QLabel == "America"{
+            logoImageView.image = UIImage(named:"america.png")
         }
-        if QLabel == "Ferrari"{
-            logoImageView.image = UIImage(named:"ferrari.png")
+        if QLabel == "Jamaica"{
+            logoImageView.image = UIImage(named:"jamaica.png")
         }
-        if QLabel == "RR"{
-            logoImageView.image = UIImage(named:"rollsroyce.png")
+        if QLabel == "Germany"{
+            logoImageView.image = UIImage(named:"germany.png")
         }
-        if QLabel == "BMW"{
-            logoImageView.image = UIImage(named:"bmw.png")
+        if QLabel == "Nepal"{
+            logoImageView.image = UIImage(named:"nepal.png")
         }
-        if QLabel == "Alfa Romeo"{
-            logoImageView.image = UIImage(named:"alfaromeo.png")
+        if QLabel == "Africa"{
+            logoImageView.image = UIImage(named:"africa.png")
         }
     }
-    
+
 }

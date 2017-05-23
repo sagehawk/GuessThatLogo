@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD36EDDA1ED222FB00F3444F /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36EDD91ED222FB00F3444F /* FlagViewController.swift */; };
+		AD36EDDC1ED22AD100F3444F /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36EDDB1ED22AD100F3444F /* HeroViewController.swift */; };
+		AD36EDDE1ED22B5000F3444F /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36EDDD1ED22B5000F3444F /* CompanyViewController.swift */; };
 		AD6E19EE1EC33BD900B9BDDF /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E19ED1EC33BD900B9BDDF /* CarViewController.swift */; };
 		ADEA01F71E9E8D0800970C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA01F61E9E8D0800970C4D /* AppDelegate.swift */; };
 		ADEA01F91E9E8D0800970C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA01F81E9E8D0800970C4D /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD36EDD91ED222FB00F3444F /* FlagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = SOURCE_ROOT; };
+		AD36EDDB1ED22AD100F3444F /* HeroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
+		AD36EDDD1ED22B5000F3444F /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		AD6E19ED1EC33BD900B9BDDF /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		ADEA01F31E9E8D0800970C4D /* Guess That Logo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess That Logo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEA01F61E9E8D0800970C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				ADEA01F81E9E8D0800970C4D /* ViewController.swift */,
 				ADEA01FA1E9E8D0800970C4D /* Main.storyboard */,
 				AD6E19ED1EC33BD900B9BDDF /* CarViewController.swift */,
+				AD36EDD91ED222FB00F3444F /* FlagViewController.swift */,
+				AD36EDDB1ED22AD100F3444F /* HeroViewController.swift */,
+				AD36EDDD1ED22B5000F3444F /* CompanyViewController.swift */,
 				ADEA01FD1E9E8D0800970C4D /* Assets.xcassets */,
 				ADEA01FF1E9E8D0800970C4D /* LaunchScreen.storyboard */,
 				ADEA02021E9E8D0800970C4D /* Info.plist */,
@@ -265,6 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD36EDDC1ED22AD100F3444F /* HeroViewController.swift in Sources */,
+				AD36EDDA1ED222FB00F3444F /* FlagViewController.swift in Sources */,
+				AD36EDDE1ED22B5000F3444F /* CompanyViewController.swift in Sources */,
 				ADEA01F91E9E8D0800970C4D /* ViewController.swift in Sources */,
 				AD6E19EE1EC33BD900B9BDDF /* CarViewController.swift in Sources */,
 				ADEA01F71E9E8D0800970C4D /* AppDelegate.swift in Sources */,

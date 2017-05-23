@@ -1,15 +1,15 @@
 //
-//  CarViewController.swift
+//  CompanyViewController.swift
 //  Guess That Logo
 //
-//  Created by Sage Hawk on 5/10/17.
+//  Created by Sage Hawk on 5/21/17.
 //  Copyright © 2017 Sage Hawk. All rights reserved.
 //
 
 import UIKit
 
-class CarViewController: UIViewController {
-    
+class CompanyViewController: UIViewController {
+
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var bar1: UIImageView!
@@ -33,15 +33,17 @@ class CarViewController: UIViewController {
         super.viewDidLoad()
         
         Questions = [
-        Question(Question: "Lexus", Answers: ["Bmw", "Lexus", "Ford", "Dodge"], Answer: 1),
-        Question(Question: "Ferrari", Answers: ["Porsche", "Oldsmobile", "Lamborghini", "Ferrari"], Answer: 3),
-        Question(Question: "RR", Answers: ["Bugatti", "McLaren", "Rolls-Royce", "Koenigsegg"], Answer: 2),
-        Question(Question: "BMW", Answers: ["Nissan", "Infiniti", "Bmw", "Mazda"], Answer: 2),
-        Question(Question: "Alfa Romeo", Answers: ["Alfa Romeo", "Tesla", "Maserati", "Pagani"], Answer: 0),]
+            Question(Question: "NASA", Answers: ["BlackBerry", "NASA", "Nokia", "Microsoft"], Answer: 1),
+            Question(Question: "Coca-Cola", Answers: ["Canon", "PepsiCo", "Aquafina", "Coca-Cola"], Answer: 3),
+            Question(Question: "Dreamworks", Answers: ["Starbucks", "Nike", "Dreamworks", "Pampers"], Answer: 2),
+            Question(Question: "Gatorade", Answers: ["Google", "Sprite", "Gatorade", "Chase"], Answer: 2),
+            Question(Question: "Lego", Answers: ["Lego", "IKEA", "Sony", "Adidas"], Answer: 0),]
 
+        
+        
         PickQuestion()
     }
-
+    
     
     func PickQuestion(){
         if Questions.count > 0{
@@ -130,21 +132,21 @@ class CarViewController: UIViewController {
     }
     
     func setLogo() {
-        if QLabel == "Lexus"{
-            logoImageView.image = UIImage(named:"lexus.png")
+        if QLabel == "NASA"{
+            logoImageView.image = UIImage(named:"nasa.png")
         }
-        if QLabel == "Ferrari"{
-            logoImageView.image = UIImage(named:"ferrari.png")
+        if QLabel == "Coca-Cola"{
+            logoImageView.image = UIImage(named:"coke.png")
         }
-        if QLabel == "RR"{
-            logoImageView.image = UIImage(named:"rollsroyce.png")
+        if QLabel == "Dreamworks"{
+            logoImageView.image = UIImage(named:"dreamworks.png")
         }
-        if QLabel == "BMW"{
-            logoImageView.image = UIImage(named:"bmw.png")
+        if QLabel == "Gatorade"{
+            logoImageView.image = UIImage(named:"gatorade.png")
         }
-        if QLabel == "Alfa Romeo"{
-            logoImageView.image = UIImage(named:"alfaromeo.png")
+        if QLabel == "Lego"{
+            logoImageView.image = UIImage(named:"lego.png")
         }
     }
-    
+
 }
