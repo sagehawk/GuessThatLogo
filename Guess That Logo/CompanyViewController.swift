@@ -9,7 +9,7 @@
 import UIKit
 
 class CompanyViewController: UIViewController {
-
+    
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var bar1: UIImageView!
@@ -28,6 +28,11 @@ class CompanyViewController: UIViewController {
     var Questions = [Question]()
     var QNumber = Int()
     var answerNumber = Int()
+    var lives:Int = 3
+    struct game {
+        static var IsOver : Bool = false
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +43,6 @@ class CompanyViewController: UIViewController {
             Question(Question: "Dreamworks", Answers: ["Starbucks", "Nike", "Dreamworks", "Pampers"], Answer: 2),
             Question(Question: "Gatorade", Answers: ["Google", "Sprite", "Gatorade", "Chase"], Answer: 2),
             Question(Question: "Lego", Answers: ["Lego", "IKEA", "Sony", "Adidas"], Answer: 0),]
-
-        
         
         PickQuestion()
     }
@@ -65,7 +68,7 @@ class CompanyViewController: UIViewController {
         print(QLabel)
         print(questionNumber)
         setLogo()
-        GameWon()
+        gameWon()
     }
     
     @IBAction func btn1(_ sender: Any) {
@@ -73,13 +76,20 @@ class CompanyViewController: UIViewController {
             questionNumber += 1
             bar1.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar1.image = UIImage(named:"redBar")
+            checkGameState()
         }
     }
     @IBAction func btn2(_ sender: Any) {
@@ -87,13 +97,21 @@ class CompanyViewController: UIViewController {
             questionNumber += 1
             bar2.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
+            
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar2.image = UIImage(named:"redBar")
+            checkGameState()
         }
     }
     @IBAction func btn3(_ sender: Any) {
@@ -101,13 +119,20 @@ class CompanyViewController: UIViewController {
             questionNumber += 1
             bar3.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar3.image = UIImage(named:"redBar")
+            checkGameState()
         }
     }
     @IBAction func btn4(_ sender: Any) {
@@ -115,38 +140,59 @@ class CompanyViewController: UIViewController {
             questionNumber += 1
             bar4.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar4.image = UIImage(named:"redBar")
-        }
-    }
-    
-    func GameWon(){
-        if questionNumber >= 5 {
-            print("Game Won")
+            checkGameState()
         }
     }
     
     func setLogo() {
-        if QLabel == "NASA"{
-            logoImageView.image = UIImage(named:"nasa.png")
-        }
-        if QLabel == "Coca-Cola"{
-            logoImageView.image = UIImage(named:"coke.png")
-        }
-        if QLabel == "Dreamworks"{
-            logoImageView.image = UIImage(named:"dreamworks.png")
-        }
-        if QLabel == "Gatorade"{
-            logoImageView.image = UIImage(named:"gatorade.png")
-        }
-        if QLabel == "Lego"{
-            logoImageView.image = UIImage(named:"lego.png")
+        if game.IsOver == false {
+            if QLabel == "NASA"{
+                logoImageView.image = UIImage(named:"nasa.png")
+            }
+            if QLabel == "Coca-Cola"{
+                logoImageView.image = UIImage(named:"coke.png")
+            }
+            if QLabel == "Dreamworks"{
+                logoImageView.image = UIImage(named:"dreamworks.png")
+            }
+            if QLabel == "Gatorade"{
+                logoImageView.image = UIImage(named:"gatorade.png")
+            }
+            if QLabel == "Lego"{
+                logoImageView.image = UIImage(named:"lego.png")
+            }
         }
     }
-
+    func gameOver() {
+        if lives == 0 {
+            game.IsOver = true
+            logoImageView.image = UIImage(named: "gameover")
+            print("You lose!")
+        }
+        
+    }
+    func gameWon(){
+        if questionNumber >= 5 {
+            logoImageView.image = UIImage(named: "gamewon")
+            print("Game Won")
+        }
+    }
+    
+    func checkGameState(){
+        gameWon()
+        gameOver()
+    }
 }

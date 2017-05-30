@@ -9,7 +9,7 @@
 import UIKit
 
 class HeroViewController: UIViewController {
-
+    
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var bar1: UIImageView!
@@ -28,6 +28,10 @@ class HeroViewController: UIViewController {
     var Questions = [Question]()
     var QNumber = Int()
     var answerNumber = Int()
+    var lives:Int = 3
+    struct game {
+        static var IsOver : Bool = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +42,6 @@ class HeroViewController: UIViewController {
             Question(Question: "Flash", Answers: ["Flash", "GreenLantern", "Ant-Man", "Thor"], Answer: 0),
             Question(Question: "WonderWoman", Answers: ["Daredevil", "Wolverine", "Black Widow", "WonderWoman"], Answer: 3),
             Question(Question: "Superman", Answers: ["Silver Surfer", "Superman", "Plasticman", "Beastboy"], Answer: 1),]
-
-        
-        
         PickQuestion()
     }
     
@@ -65,108 +66,135 @@ class HeroViewController: UIViewController {
         print(QLabel)
         print(questionNumber)
         setLogo()
-        GameWon()
+        gameWon()
     }
     
     @IBAction func btn1(_ sender: Any) {
-        lightUpButtons()
         if answerNumber == 0{
             questionNumber += 1
             bar1.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar1.image = UIImage(named:"redBar")
+            checkGameState()
         }
     }
     @IBAction func btn2(_ sender: Any) {
-        lightUpButtons()
         if answerNumber == 1{
             questionNumber += 1
             bar2.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
+            
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar2.image = UIImage(named:"redBar")
+            checkGameState()
         }
     }
+    
     @IBAction func btn3(_ sender: Any) {
-        lightUpButtons()
         if answerNumber == 2{
             questionNumber += 1
             bar3.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
             }
         }
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar3.image = UIImage(named:"redBar")
+            checkGameState()
         }
     }
     @IBAction func btn4(_ sender: Any) {
-        lightUpButtons()
         if answerNumber == 3{
             questionNumber += 1
             bar4.image = UIImage(named:"greenBar")
             let delayInSeconds = 0.5
+            checkGameState()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                self.PickQuestion()
+                if game.IsOver == false {
+                    
+                    self.PickQuestion()
+                }
+                
+                
             }
+            
         }
         else {
+            lives -= 1
+            print("\(lives)")
             NSLog("Wrong!")
             bar4.image = UIImage(named:"redBar")
-        }
-    }
-    
-    func GameWon(){
-        if questionNumber >= 5 {
-            print("Game Won")
+            checkGameState()
         }
     }
     
     func setLogo() {
-        if QLabel == "Spiderman"{
-            logoImageView.image = UIImage(named:"spiderman.png")
+        if game.IsOver == false {
+            if QLabel == "Spiderman"{
+                logoImageView.image = UIImage(named:"spiderman.png")
+            }
+            if QLabel == "Batman"{
+                logoImageView.image = UIImage(named:"batman.png")
+            }
+            if QLabel == "Flash"{
+                logoImageView.image = UIImage(named:"flash.png")
+            }
+            if QLabel == "WonderWoman"{
+                logoImageView.image = UIImage(named:"wonderwoman.png")
+            }
+            if QLabel == "Superman"{
+                logoImageView.image = UIImage(named:"superman.png")
+            }
         }
-        if QLabel == "Batman"{
-            logoImageView.image = UIImage(named:"batman.png")
+    }
+    func gameOver() {
+        if lives == 0 {
+            game.IsOver = true
+            logoImageView.image = UIImage(named: "gameover")
+            print("You lose!")
         }
-        if QLabel == "Flash"{
-            logoImageView.image = UIImage(named:"flash.png")
-        }
-        if QLabel == "WonderWoman"{
-            logoImageView.image = UIImage(named:"wonderwoman.png")
-        }
-        if QLabel == "Superman"{
-            logoImageView.image = UIImage(named:"superman.png")
+        
+    }
+    func gameWon(){
+        if questionNumber >= 5 {
+            logoImageView.image = UIImage(named: "gamewon")
+            print("Game Won")
         }
     }
     
-    func lightUpButtons() {
-        let delayInSeconds = 0.2
-        bar1.image = UIImage(named:"greenBar")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-            self.bar1.image = UIImage(named:"greyBar")
-        self.bar2.image = UIImage(named:"greenBar")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-            self.bar2.image = UIImage(named:"greyBar")
-            self.bar3.image = UIImage(named:"greenBar")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-            self.bar3.image = UIImage(named:"greyBar")
-            self.bar4.image = UIImage(named:"greenBar")
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-            self.bar4.image = UIImage(named:"greyBar")
-            }}}}}
-
+    func checkGameState(){
+        gameWon()
+        gameOver()
     }
+}
